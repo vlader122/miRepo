@@ -28,13 +28,15 @@ function App() {
   return (
     <>
     <div className="container">
+      <h1>Bienvenidos a mi pagina</h1>
+      <h2>WindBnb</h2>
       <div className="row">
       {data.map((el, i) => {
           if(el.superHost){
 
           }
           return <div className="col-4">
-            <h1 key={i}>{el.city}</h1>
+            <h4 key={i}>{el.city}</h4>
             <img src={el.photo} width={450} height={300} className="p-2 m-2"></img>
           </div>;
         })}
